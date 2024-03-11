@@ -7,6 +7,7 @@ specifiers:
   download-git-repo: ^3.0.2
   fs-extra: ^11.2.0
   inquirer: ^8.2.6
+  ora: ^5.4.1
   path: ^0.12.7
 
 dependencies:
@@ -16,6 +17,7 @@ dependencies:
   download-git-repo: 3.0.2
   fs-extra: 11.2.0
   inquirer: 8.2.6
+  ora: 5.4.1
   path: 0.12.7
 
 packages:
