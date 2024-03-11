@@ -16,6 +16,7 @@ program
   .action((projectName, options) => {
     console.log("create project: ", projectName);
     console.log("options: ", options);
+    require("../lib/create.js")(projectName, options);
   });
 
 // 解析用户输入的命令和参数，第一个参数是要解析的字符串数组，第二个参数是解析选项
