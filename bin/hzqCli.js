@@ -2,8 +2,6 @@
 
 // 上述为 Node.js 脚本文件的行首注释，告知使用 node 来解析和执行后续的脚本内容
 
-console.log("hello hzqCli");
-
 // 引入 commander 模块，官方使用文档：https://github.com/tj/commander.js/blob/HEAD/Readme_zh-CN.md
 const { program } = require("commander");
 
@@ -14,8 +12,6 @@ program
   .description("create a new project")
   .option("-f --force", "overwrite existed project") // 定义选项，同时可以附加选项的简介，短名称（-后面接单个字符）和长名称（--后面接一个或多个单词，空格分隔
   .action((projectName, options) => {
-    console.log("create project: ", projectName);
-    console.log("options: ", options);
     require("../lib/create.js")(projectName, options);
   });
 
